@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <meta charset="UTF-8">
+    <title>Block vs Inline Table</title>
+  </head>
+  <body>
+    <header>
+      <nav><a href="../index.html">Home</a></nav>
+      <h1>Block vs Inline Table</h1>
+    </header>
+
+    <section>
+
+      <table>
+          <tr>
+              <th>Characteristic</th>
+              <th>Inline Display</th>
+              <th>Block Display</th>
+          </tr>
+          <tr>
+              <td>Typical Elements</td>
+              <td>Examples include elements like &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;em&gt;, &lt;img&gt;.</td>
+              <td>Examples include elements like &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;, &lt;ul&gt;, &lt;li&gt;, &lt;table&gt;.</td>
+          </tr>
+          <tr>
+              <td>Width and Height</td>
+              <td>Elements ignore the specified width and height properties. They only occupy the width necessary for their content.</td>
+              <td>Elements respect the specified width and height properties and occupy the 100% of the width by default.</td>
+          </tr>
+          <tr>
+              <td>Line Breaks and Newlines</td>
+              <td>Elements disregard line breaks and newlines. They appear on the same line as other adjacent inline elements.</td>
+              <td>Elements create a line break, causing them to stack vertically on separate lines.</td>
+          </tr>
+          <tr>
+              <td>Margin and Padding</td>
+              <td>Top and bottom margin and padding has no spacing effect on  adjacent elements.</td>
+              <td>Margin and padding impact the spacing around the element itself but do not affect adjacent elements.</td>
+          </tr>
+          <tr>
+              <td>Horizontal Margin and Padding</td>
+              <td></td>
+              <td>Left and right margin and padding can create space between adjacent block-level elements.</td>
+          </tr>
+          <tr>
+              <td>Float and Clear</td>
+              <td>Elements cannot use float or clear properties for positioning.</td>
+              <td>Elements can use float and clear properties to control their positioning.</td>
+          </tr>
+          <tr>
+              <td>Default Display Value</td>
+              <td>The default display value is `display: inline;` for elements like &lt;span&gt; and &lt;a&gt;.</td>
+              <td>The default display value is `display: block;` for elements like &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;, &lt;ul&gt;, &lt;li&gt;, and &lt;table&gt;.</td>
+          </tr>
+      </table>
+      
+    </section>
+
+  </body>
+</htm>
