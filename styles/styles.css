@@ -13,8 +13,12 @@ div {
 
 /* Begin heree */
 
-.vert {
-  margin-top: 60px;
+.container {
+  margin: 40px 0 40px 0;
+}
+
+.first-row {
+
 }
 
 .one, 
@@ -26,24 +30,7 @@ div {
   padding: 20px 0 20px 0;
 }
 
-.one {
-
-}
-
-.two {
-
-}
-
-.three {
-
-}
-
-.four {
-
-}
-
-
-.horiz {
+.second-row {
   margin-top: 60px;
   display: block;
 }
@@ -55,21 +42,6 @@ div {
   background-color: rgb(4, 158, 163);
   display: inline;
   padding: 20px 0 20px 0;
-}
-.five {
-
-}
-
-.six {
-
-}
-
-.seven {
-
-}
-
-.eight {
-
 }
 
 /*display change to inline*/

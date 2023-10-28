@@ -5,81 +5,115 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <h1>Inline Padding, Margin, and Border Rules.</h1>
 
-    <h2>Inline Rule 1.</h2>
-    <p>
-      If the padding, border, and margin properties are applied vertically (top & bottom),
-      other inline boxes will <strong>not</strong> be moved away from the box around the element.
-    </p>
+    <header>
+      <nav><a href="../index.html">Home</a></nav>
+      <h1>Inline Padding, Margin, and Border Rules.</h1>
+      <h2>Two Inline Rules</h2>
+    </header>
     
-    <h3>What does that really look like?</h3>
-    
-    <div class="vert">
-      <div class="one">1</div>
-      <div class="two">2</div>
-      <div class="three">3</div>
-      <div class="four">4</div>
-    </div>
-    <div class="horiz">
-      <div class="five">5</div>
-      <div class="six">6</div>
-      <div class="seven">7</div>
-      <div class="eight">8</div>
-    </div>
+    <ol>
+      <li>
+        <p>
+          If the padding, border, and margin properties are applied vertically (top & bottom),
+          other inline boxes will <strong>not</strong> be moved away from the box around the element.
+        </p>
+      </li>
+      <li>
+        <p>
+          If the padding, border, and margin properties are applied horizontally, other inline elements will be forced 
+          away from the box around the element.
+        </p>
+      </li>
+    </ol> 
 
-    <p>
-      The orange and blue rows are currently block display types. Let's observe what occurs when we apply
-      the inline display type vertically to the second row.
-    </p>
-
-    <div class="vert">
-      <div class="one">1</div>
-      <div class="two">2</div>
-      <div class="three">3</div>
-      <div class="four">4</div>
-    </div>
-    <div class="horiz inline">
-      <div class="five">5</div>
-      <div class="six">6</div>
-      <div class="seven">7</div>
-      <div class="eight">8</div>
-    </div>
+    <section>
       
-    <h4>What happened?</h4>
-
-    <p>
-      As our previous rule suggests, the inline boxes above did not move away, causing the second inline row to
-      overlap the first.
-    </p>
-
-    <h2>Inline Rule 2.</h2>
-
-    <p>If the padding, border, and margin properties are applied horizontally, other inline elements will be forced 
-      away from the box around the element.
-    </p>
-
-    <h3>Instead of overlapping the elements in the last example, the other elements should make some room
-      for the element with the <strong>horizontal</strong> padding/margin/border increase correct?</h3>
-
-    <div class="vert">
-      <div class="one">1</div>
-      <div class="two">2</div>
-      <div class="three">3</div>
-      <div class="four">4</div>
+      <h3>Inline Rule #1</h3>
+      
+      <h3>Vertically applied Inline Padding, Margin, Border</h3>
+      
+      <p>The first and second container rows are <span>block</span> display types.
+        Padding is applied vertically (top & bottom).</p>
+      <div class="container">      
+        <div class="first-row">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+      </div>
+      <div class="second-row">
+        <div class="five">5</div>
+        <div class="six">6</div>
+        <div class="seven">7</div>
+        <div class="eight">8</div>
+      </div>
     </div>
 
-    <p>Here's the default row.</p>
 
-    <div class="vert some">
-      <div class="one expand">1</div>
-      <div class="two expand">2</div>
-      <div class="three">3</div>
-      <div class="four">4</div>
-    </div>
+      <p>
+        What happens when we change the 
+        second container to the <span>inline</span> display type?
+      </p>
+      <div class="container">
+        <div class="first-row">
+          <div class="one">1</div>
+          <div class="two">2</div>
+          <div class="three">3</div>
+          <div class="four">4</div>
+        </div>
+        <div class="second-row inline">
+          <div class="five">5</div>
+          <div class="six">6</div>
+          <div class="seven">7</div>
+          <div class="eight">8</div>
+        </div>
+      </div>
+        
+        
+      <h4>What happened?</h4>
 
-    <h4>What happened?</h4>
+      <p>
+        With <span>block</span> display elements, we've come to expect the other elements to scootch over to make room
+        for both vertical and horizontal padding,margin and borders of a modified element. But with <span>inline</span> display elements, this is true <em>only</em> for the <strong>horizontal (left & right)</strong>
+        padding,margin and border. We can see this in a similar example below.
+      </p>
 
-    <p>As rule 2 suggests, horizontal padding, margin, and border values push the other values aside</p>
+    </section>
+     
+    <section>
+      <h3>Inline Rule #2</h3>
+
+      <h3>Vertically applied Inline Padding, Margin, Border</h3>
+
+      <p>Let's use a single row since we're looking at the horizontal padding,margin and border. </p>
+
+      <div class="container">
+        <div class="vert">
+          <div class="one">1</div>
+          <div class="two">2</div>
+          <div class="three">3</div>
+          <div class="four">4</div>
+        </div>
+      </div>
+
+      <p>What happens when we apply horizontal padding?</p>
+
+      <div class="container">
+        <div class="vert">
+          <div class="one expand">1</div>
+          <div class="two expand">2</div>
+          <div class="three expand">3</div>
+          <div class="four expand">4</div>
+        </div>
+      </div>
+
+      <h4>What happened?</h4>
+
+      <p>As previously expected, when horizontal padding,margin and border are used by an inline element, other inline elements (all of them in this case)
+        scootch over to make room for it's changed brethren.
+      </p>
+    </section>
+    
   </body>
 </html>
