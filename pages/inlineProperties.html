@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <h1>Inline Padding, Margin, and Border Rules.</h1>
+
+    <h2>Inline Rule 1.</h2>
+    <p>
+      If the padding, border, and margin properties are applied vertically (top & bottom),
+      other inline boxes will <strong>not</strong> be moved away from the box around the element.
+    </p>
+    
+    <h3>What does that really look like?</h3>
+    
+    <div class="vert">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+    </div>
+    <div class="horiz">
+      <div class="five">5</div>
+      <div class="six">6</div>
+      <div class="seven">7</div>
+      <div class="eight">8</div>
+    </div>
+
+    <p>
+      The orange and blue rows are currently block display types. Let's observe what occurs when we apply
+      the inline display type vertically to the second row.
+    </p>
+
+    <div class="vert">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+    </div>
+    <div class="horiz inline">
+      <div class="five">5</div>
+      <div class="six">6</div>
+      <div class="seven">7</div>
+      <div class="eight">8</div>
+    </div>
+      
+    <h4>What happened?</h4>
+
+    <p>
+      As our previous rule suggests, the inline boxes above did not move away, causing the second inline row to
+      overlap the first.
+    </p>
+
+    <h2>Inline Rule 2.</h2>
+
+    <p>If the padding, border, and margin properties are applied horizontally, other inline elements will be forced 
+      away from the box around the element.
+    </p>
+
+    <h3>Instead of overlapping the elements in the last example, the other elements should make some room
+      for the element with the <strong>horizontal</strong> padding/margin/border increase correct?</h3>
+
+    <div class="vert">
+      <div class="one">1</div>
+      <div class="two">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+    </div>
+
+    <p>Here's the default row.</p>
+
+    <div class="vert some">
+      <div class="one expand">1</div>
+      <div class="two expand">2</div>
+      <div class="three">3</div>
+      <div class="four">4</div>
+    </div>
+
+    <h4>What happened?</h4>
+
+    <p>As rule 2 suggests, horizontal padding, margin, and border values push the other values aside</p>
+  </body>
+</html>
